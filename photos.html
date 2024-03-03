@@ -1,0 +1,52 @@
+
+
+<head>
+
+    <style>
+    body {
+    
+        columns: 3 auto ;
+        column-gap: 2px; 
+    }
+    img {
+        width: 100%;
+    }
+    </style>
+    </head>
+    <body>
+    
+    </body>
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+         lists=['./src/photo.jpg','./src/photos/4d024bdb14ad5e973e22f35a12bb4949384628005.jpg',"./src/photos/5c57120fddc28e9ecfbb5609dd357c37384628005.jpg","./src/photos/6e75057fb3eeacb521a552dae639b37a384628005.jpg","./src/photos/7c916dc3a9736ebee83389c584a623f8384628005.jpg","./src/photos/8af48289e22130ac7713ea0e3e0c474c384628005.jpg","./src/photos/8ebacf4c3363af5368a4d0a51ecbaaaf1108285579.jpg","./src/photos/18ffd970e12b56761555920e2177f8131108285579.jpg","./src/photos/42d0e9df9c6f673e17b23703f0dadd27384628005.jpg","./src/photos/80d74ff388f9c8011ef1283e885d806c384628005.jpg","./src/photos/97e927b4af532aca3c8bc2e0e5c1913e384628005.jpg","./src/photos/489ccdf94a96471783f1b6ae30ba52051108285579.jpg","./src/photos/4945a179dbd1b604f49eb87a6ddaaa29384628005.jpg","./src/photos/8993eb5841d79017714a33084af372cc1108285579.jpg","./src/photos/336992fe65c7f832b8d9a8feb197346b384628005.jpg","./src/photos/4731233bee794a6feb746fb028d2aa1c384628005.jpg","./src/photos/59131870059d6f327b6773383de1d3f81108285579.png","./src/photos/a8c1569a8c5a1e98fe7e4d88a917f3a5384628005.jpg","./src/photos/b4a71536c0038bcf560add4762e84121384628005.jpg","./src/photos/b28e71b067ed72003be2e1b4d8625714384628005.jpg","./src/photos/bec959f2f7fc56d5fd1a2d04726be828384628005.jpg","./src/photos/bf17356c34c59d8591bce3222fbfa274384628005.jpg","./src/photos/d41aba81b003a5ea9ddd96e162ead19c384628005.jpg","./src/photos/dd8fb75524180faf7a844400a1619f3f1108285579.jpg","./src/photos/f59fa0112e19f951a54da2e09bd8c72e384628005.jpg","./src/photos/fb8cef1148f3efd9a11b0fdfc74588be384628005.jpg"]
+       
+        maxnum=lists.length;
+        num=0;
+    
+        function loadMore(num){
+        
+            document.body.innerHTML += "<img src='"+lists[num]+"'" +">";
+    
+        }
+          
+        
+        $(document).ready(function() {
+                $(window).scroll(function() {
+                  if ($(window).scrollTop() + $(window).height() >= $(document).height()) {
+                    if(num<maxnum){
+                      
+                      loadMore(num);   
+                      num += 1;   
+                    }
+        
+                  }
+                });
+                });
+        
+        for(var i=0;i<10;i++){
+          loadMore(num);
+          num += 1;
+        }
+        
+        </script>
