@@ -1,4 +1,5 @@
 ## 流萤 | Firefly
+![img](./src/photo.jpg)
 > 本网站内容仅代表玩家观点，不代表任何《崩坏：星穹铁道》原作观点。  
 > The content on this website represents only the views of the players and does not represent the views of any original works of "Honkai: Star Rail".
 

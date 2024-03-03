@@ -32,8 +32,9 @@
 
 <body>
 
-    <div id="sky"></div>
-    <img style="position: fixed;top: 20px;left: 20px;width: 70px;height: 70px;border-radius: 50%;z-index: 9999;" src="./src/fireflylove.png" alt="流萤lover">
+ 
+    <img id="firefly" src="./src/fireflylove.png" alt="流萤lover">
+    
     <div id="main" class="container">
         <div class="row my-card justify-content-center">
             <div class="col-lg-4 photo-bg"></div>
@@ -65,20 +66,21 @@
                 </div>
 
                 <ul class="social mt-1">
-                    <li><a href="https://github.com/Tcilay-xi"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Tcilay-xi/Firefly"><i class="fab fa-github" aria-hidden="true"></i></a></li>
                     <li><a href="https://tcilay.fun"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                     
                 </ul>
 
                 <footer>
-                    <p id="hitokoto_text" style="color: darkgrey;text-align: right;">:D 一言获取中...</p>
+                    <p id="hitokoto_text" style="color: rgb(95, 95, 95);text-align: right;">:D 一言获取中...</p>
                     <p>Copyright 2024 - Now <a href="https://www.tcilay.cn/" target="_blank">Tcilay</a>              
                     </p>
                 </footer>
             </div>
         </div>
-
+        <div id="sky"></div>
     </div>
+
     <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
     <script defer src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -91,7 +93,7 @@
     <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js server="netease" type="playlist" id="9369426998"  fixed="true" mini="true" autoplay="true" loop="all" order="random" preload="auto" />
-
+    <script src="./static/animation.js"></script>
 
 
 
