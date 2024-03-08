@@ -37,7 +37,9 @@ $('.tc-nav-btn').on('click', function() {
   }
 });
 
-
+document.addEventListener('DOMContentLoaded', function () {
+  mediumZoom('[data-zoomable]');
+});
 
 var meting_api='https://music.api.tcilay.fun/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
 fetch('https://v1.hitokoto.cn')
